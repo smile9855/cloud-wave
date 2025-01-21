@@ -1,0 +1,7 @@
+while true; do
+  PGPASSWORD="qwer1234" psql -h lab-edu-rds-aurora.cluster-ro-clwumicsw6zy.ap-northeast-2.rds.amazonaws.com \
+      -U user \
+      -d trip_advisor \
+      -c "select * from attractions;";
+  sleep 1;
+done
